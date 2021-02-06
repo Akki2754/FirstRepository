@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Railway Registration Form
+        </title>
+        <style>
+             body{
+                background-image: url("./pexels-photo-3894157.jpeg");
+                background-size: cover;
+                
+                
+            }
+
+            .place{
+                text-align: center;
+                border-style: double;
+                border-radius: 10px;
+                width: 180px;
+                height: 20px;
+                font-size:12px;
+            
+            }
+    
+            .field{
+                width: 200px;
+                margin-left: 550px;
+                border-style:groove;
+                border-radius: 10px;
+                box-shadow:0px 8px 10px green;
+                background: rgb(133, 113, 87);
+                
+            }
+            .legend{
+                color:black;
+                font-size:large;
+                font-weight: bold;
+                text-shadow: 0 0 10px white;
+            
+            }
+            h1{
+                font-family:cursive;
+                font-style: oblique;
+                color: white;
+                text-shadow: 5px 8px 5px black;
+                margin-left: 440px;
+            }
+            .a{
+                font-family:monospace;
+                font-size: 15px;
+                font-weight:bolder;
+            }
+            .button{
+                border-radius: 10px;
+                width: 70px;
+                height: 24px;
+                
+            }
+            .button:hover{
+                color:white;
+                cursor: pointer;
+                background-color: crimson;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1 style="padding-left: 30px;padding-top: 10px;text-align: left;">Railway Registration Form</h1>
+        <form style="text-align: center;width: 60px;height: 100px;">
+            <fieldset class="field">
+                <legend class="legend">Registration Form</legend>
+            <label class="a">Name:- </label>
+            <input type="text" class="place" placeholder="Full Name" required  ><br>
+            <!-- <input type="text"placeholder="Last Name"style="width:20px" required><br> -->
+            <label class="a">E-mail:-</label>
+            <input type="email" class="place" placeholder="Email ID" required><br>
+            <label class="a">Mobile No:-</label>
+            <input type="number" class="place" placeholder="Mobile Number"required><br>
+            <label class="a">Alternate Number</label>
+            <input type="number" class="place" placeholder="Alternate Number"><br><br>
+            
+            <!-- <label>Railway Name & Timing</label><br>
+                <select>
+                    <optgroup label="Maharashtra Express">
+                        <option>8.00am</option>
+                        <option>10.00am</option>
+                        <option>12.00am</option>
+                        <option>2.00pm</option>
+                    </optgroup>
+                    <optgroup label="Chennai Express">
+                        <option>6.00 am</option>
+                        <option>10.00 am</option>
+                    </optgroup>
+                </select><br> -->
+
+            <!-- <label>Choose Quantity:-</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+            </select><br>
+            <label>Terms:-</label>
+            <input type="checkbox" required><br> -->
+            <input type="submit" class="button">
+            <input type="reset" class="button">
+        
+
+        </fieldset>
+        </form>
+    </body>
+</html>

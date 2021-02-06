@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <style>
+        h1 {
+            color: blueviolet;
+        }
+
+        .container {
+            color: brown;
+        }
+
+        .para {
+            color: cyan;
+        }
+
+        * {
+            color: firebrick;
+        }
+        /*Attribute Selector*/
+a[target=_blank]{
+    color: gold;
+}
+[title~=stick]{
+    border: 5px solid red;
+}
+[title $=stick]/* its start matching values from End of the lines(values that provided by us) */
+{
+    border: 20px solid lawngreen;
+}
+[title *=sti]/* its start matching alphabets (values that provided by us) */
+{
+    border: 30px solid red;
+}
+[title|=stick]/**/
+{
+    border:5px solid lawngreen;
+}
+[title ^=stick] /* its start matching values from begin of the lines(values that provided by us) */
+{  
+    border: 40px solid lightgreen;
+}
+/*Pseudo Elements*/
+    </style>
+</head>
+
+<body>
+    <h1>Good Morning</h1>
+    <div class="container">
+        <div class="para">
+            <p>paragraph</p>
+        </div>
+        <p>another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+    <img src="./pexels-photo-1092730.jpeg" title="food-stick">
+    <img src="./pexels-photo-1583884.jpeg" title="stick">
+    <img src="./pexels-photo-1893556.jpeg" title="sticksss " >
+    <a
+        href="https://www.google.com/search?q=w3schools&rlz=1C1CHZL_enIN910IN910&oq=&aqs=chrome.0.69i59i450l8.394427829j0j7&sourceid=chrome&ie=UTF-8" target="_blank">click here</a>
+</body>
+
+</html>
