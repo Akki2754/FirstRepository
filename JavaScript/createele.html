@@ -8,25 +8,36 @@
 </head>
 <body>
     
-    <h1>The remove() Method</h1>
-    
-    <p class="demo">The remove() method removes the element from the DOM.</p>
-    
-    <p id="delete">Click the button, and this paragraph will be removed
-        
-    </p>
-    
-    <button onclick="myFunction()">Remove paragraph</button>
-    
     <script>
-    function myFunction() {
-      var myobj = document.getElementsById('delete');
-      myobj.remove();
-    }
-    </script>
-    
-    </html>
-    
+      var div=document.createElement('Div')
+      console.log(div)
+       var body=document.body
+       console.log(body)
+      div.innerHTML='Inside Div'
+      var p=document.createElement('p')
+      p.innerHTML='Inside p'
+      div.appendChild(p)
+      var span=document.createElement('span')
+      span.innerHTML="inside span"
+      p.appendChild(span)
+      
 
+      var ul=document.createElement('ul')
+      var li=document.createElement('li')
+      li.innerHTML="first item"
+      var litwo=document.createElement('li')
+      litwo.innerHTML="second item"
+      ul.append(li)
+      ul.append(litwo)
+      div.append(ul)
+
+      var input=document.createElement('input');
+      var button=document.createElement('button')
+      button.innerHTML="Add"
+      div.append(input)
+      div.append(button)
+      body.append(div)
+
+    </script>
 </body>
 </html>
