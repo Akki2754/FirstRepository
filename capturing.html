@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divOne">
+        Inside Div
+        <p id="pOne">
+            Inside p tag
+            <span id="spanOne">Inside span</span>
+            <a id="anchor" href="#">click here</a>
+        </p>
+    </div>
+    <script>
+        var span =document.getElementById("spanOne")
+        span.addEventListener('click',function(e){
+            e.stopPropagation()
+            console.log("span Event")
+        span.innerHTML="Span changed"
+        })
+
+        var a=document.getElementById("anchor")
+        a.addEventListener('click',function(e){
+             e.stopPropagation()
+            console.log("a event")
+        })
+
+        var p = document.getElementById("pOne")
+        p.addEventListener('click',function(e){
+            console.log("p Event")
+            e.stopPropagation()
+            p.innerHTML="abc"
+        })
+
+        var div = document.getElementById("divOne")
+        div.addEventListener('click',function(){
+            console.log("Div Event")
+            e.stopPropagation()
+            a.innerHTML="click me"
+        })
+
+        
+    </script>
+    
+</body>
+</html>
