@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body {
+            padding: 0%;
+            margin: 5px%;  
+            background-size: cover;
+           background-image: url("./pexels-photo-1893556.jpeg");
+        
+       }
+       body{
+           color: blue;
+       }    
+        img {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+
+        .main-container {
+            display: flex;
+            
+            
+        }
+
+        .rowblock {
+            display: flex;
+            flex-direction: row;
+            width: 400%;
+            
+        
+        }
+        .newrow{
+            display: flex;
+           flex-direction: row;
+        }
+        .newrow div{
+            background-color: cadetblue;
+        }
+        .newrow div{
+            width: 50%;
+            height: 30%;
+            border: 2px solid black;
+            margin-left: 2px;
+        }
+
+        .columnblock {
+            width: 200%;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            background-color: darkgrey;
+            
+        }
+        .columnblock p{
+            border: 1px solid black;
+            padding: 0%;
+            margin: 2px;
+            
+        }
+        .firstrow ,.secondrow{
+            margin: 2px;
+            border: 2px solid black;
+            background-color: cornflowerblue;
+        }
+        .firstrow h2,.secondrow h2{
+            color: red;
+        }
+        h1{
+            text-align: center;
+            background-color:burlywood;
+            margin-bottom: 2px;
+            border-radius: 20px;
+            padding: 0%;
+        }
+        @media (min-width: 480px) {
+            .main-container{
+            color:green;
+            background-image: url("./pexels-photo-3389613\ \(1\).jpeg");
+            display: flex;
+            flex-direction: column;
+        
+        }
+        }
+
+    </style>
+    </style>
+</head>
+<body>
+    <h1>Lets Learn <span style="color: red;">Flexbox in More</span> datail!</h1>
+    <img src="./pexels-photo-2058128.jpeg" alt="">
+    <div class="main-container">
+        <div class="rowblock">
+            <div class="firstrow">
+                <h2>Dolor Sit</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ipsam quae iure odio ullam nulla. Quia
+                voluptates animi maxime molestias!</p>
+            </div>
+            <div class="secondrow">
+                <h2>consectetur adipiscing</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae nobis exercitationem eius
+                enim voluptate, quibusdam consectetur temporibus obcaecati blanditiis.</p>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa esse quod eaque molestiae aspernatur
+                inventore eligendi similique, laborum placeat possimus.</p>
+            </div>
+        </div>
+        <div class="columnblock">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem provident eius totam sunt
+                    minus obcaecati autem dolorem consectetur, distinctio nobis fugiat iure aspernatur dignissimos
+                    tenetur praesentium at temporibus ipsum reprehenderit.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolorem, id deserunt dolores aliquid
+                    consequuntur maxime dolor ratione placeat temporibus animi ut dolore accusantium illo alias
+                    aspernatur, earum cumque ipsam?</p>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="newrow">
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, dolor ut. Cumque error fugit
+            iste porro ea, incidunt autem dolores ipsa ratione eaque quis repudiandae eos delectus obcaecati quia
+            reiciendis. Quaerat dignissimos libero eaque et assumenda perferendis alias quasi tempore!</p>
+        </div>
+
+    </div>
+</body>
+</html>

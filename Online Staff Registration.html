@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title>
+            Staff Registration Form
+        </title>
+        <style>
+            fieldset{
+                background:linear-gradient(35deg,lightgreen,yellow,lightpink)
+            }
+            fieldset{
+                border-radius: 10px;
+            }
+            legend{
+                margin-left: 70px;
+            }
+            
+        </style>
+    </Head>
+    <body style="padding-left: 400px">
+        <form >
+            
+            <fieldset style="box-shadow: cyan 1px 1px;width: 550px;height: 450px;">
+                <legend style="text-shadow:1px 1px red ;margin-bottom: 10px;text-align: left;">Employee Registration Form</legend>
+            <label style="color: black;">Name:-</label>
+            <input type="text" placeholder="First Name"  required>
+            <input type="text" placeholder="Last Name" required><br><br>
+            <label style="color: black;">Email Address</label>
+            <input type="email"required><br><br>    
+            <label style="color: black;">Contact Number</label>
+            <input type="number" style="color: blue ;"><br><br>
+            <label style="color: black;">Address:-</label>
+            <input type="text"><br><br>
+            <label style="color: black;">State:-</label>
+            <select style="color: brown;">
+                <option>Maharashtra</option>
+                <option>MP</option>
+                <option>UP</option>
+            </select>
+            <label style="color: black;">Dist:-</label>
+            <select  style="color: brown;" required>
+                <option>Pune</option>
+                <option>Satara</option>
+                <option>Kolhapur</option>
+                <option>Sangli</option>
+            </select>
+            <label style="color: black;">Tal:-</label>
+            <select style="color: brown;" required>
+                <option>Pune Haweli</option>
+                <option>Karad</option>
+                <option>Patan</option>
+            </select><br><br>
+            <label style="color: black;">Pin code:-</label>
+            <input type="number" required> <br><br>
+            <label style="color: black;">Apply For Position </label>
+            <input type="text"><br><br>
+            <label style="color: black;">Type of Work</label>
+            <select style="color: brown;" required>
+                <option>Permanent</option>
+                <option>Temporary</option>
+                <option>Both</option>
+            </select><br><br>
+            <label style="color: black;">Cover Letter Of Additional Information</label>
+            <input type="text"><br><br>
+            <label style="color: black;">Upload Resume</label>
+            <input type="text">
+             <input type="file"required><br><br>
+            <input type="submit" style="background: orangered;margin-left: 230px;margin-top: 10px;border-radius: 10px;box-shadow: 0 0 10px black;">
+            <input type="reset" style="background: orangered;border-radius: 10px;box-shadow:0 0 10px black;">
+            </fieldset>
+        </form>
+    </body>
+</html>
